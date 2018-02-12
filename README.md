@@ -38,7 +38,7 @@ duplicates.
 
 ## Notes
 
-### Binary trees enumeration
+### Binary tree enumeration
 
 The key to the overall approach is in the `shuntconnection()` function.
 Repeated application of this function can be used to enumerate all possible
