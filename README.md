@@ -38,6 +38,17 @@ duplicates.
 
 ## Notes
 
+### Binary trees enumeration
+
+The key to the overall approach is in the `shuntconnection()` function.
+Repeated application of this function can be used to enumerate all possible
+binary trees containing the given number of leaf nodes.
+
+Every formula can be represented as a tree, where parent nodes are operators
+and leaf nodes are numbers, so each tree ends up being a formula to check.
+
+### Duplicates
+
 The Countdown numbers game doesn't require the contestant to use all of the
 numbers: if there's a way to get the result with fewer than the full set of
 numbers, that's perfectly fine.
