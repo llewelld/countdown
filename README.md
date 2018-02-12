@@ -72,7 +72,7 @@ Code to do this can be seen in the `naive.py` file. However, this doesn't
 cover all possibilities. Take the simple example of numbers 1, 1, 2 and 4, in
 an attempt to reach a target of 15. If you just apply operators in order you
 never reach a solution. To get the right result, you have to use brackets,
-for example (1 + 3) * (1 + 5) = 15. Without the brackets it can't be done,
+for example (1 + 3) * (1 + 4) = 15. Without the brackets it can't be done,
 and the naive version will claim it to be impossible.
 
 ## Licence
