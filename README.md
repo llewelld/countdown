@@ -17,7 +17,7 @@ point are for the formula.
 This ordering was chosen to match the order the numbers are presented on the
 TV show. Makes it easier to enter them while watching the program.
 
-Here's an example from a [classic Coundown game](https://youtu.be/DYW1c41Aw0U?t=10m03s):
+Here's an example from a [classic Countdown game](https://youtu.be/DYW1c41Aw0U?t=10m03s):
 
 ```
 python countdown.py 6 5 75 25 100 50 814
