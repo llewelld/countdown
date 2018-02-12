@@ -64,6 +64,17 @@ program on all subsets of the set of numbers entered. This complicates the code
 and adding in the prune operator was easier, so I've gone with this instead,
 even though the duplicates are annoying.
 
+### Naive approach
+
+A naive approach to solving these things would be to simply permute all of the
+numbers and operators, then apply the operators to the numbers in order.
+Code to do this can be seen in the `naive.py` file. However, this doesn't
+cover all possibilities. Take the simple example of numbers 1, 1, 2 and 4, in
+an attempt to reach a target of 15. If you just apply operators in order you
+never reach a solution. To get the right result, you have to use brackets,
+for example (1 + 3) * (1 + 5) = 15. Without the brackets it can't be done,
+and the naive version will claim it to be impossible.
+
 ## Licence
 
 This code is released under the MIT licence. See the LICENCE file for details.
