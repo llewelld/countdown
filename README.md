@@ -8,6 +8,25 @@ every possible formula that can be generated using the integer operators
 using the numbers provided, in order to try to calculate a given target
 number.
 
+## Inputs
+
+Call the program with a sequence of at least three numbers on the command line.
+The last number will be used as the target, all of the numbers up to that
+point are for the formula.
+
+This ordering was chosen to match the order the numbers are presented on the
+TV show. Makes it easier to enter them while watching the program.
+
+Here's an example from a [classic Coundown game](https://youtu.be/DYW1c41Aw0U?t=10m03s):
+
+```
+python countdown.py 6 5 75 25 100 50 814
+```
+which will eventually generate the output from the show:
+```
+((((75 + 6) * (50 * 5)) + 100) / 25) = 814
+```
+
 ## Outputs
 
 The program will output the closest formula it can find to the target number
