@@ -66,7 +66,7 @@ def getclose(nums, find, closest, closelist):
 		elif diff == closest:
 			closelist += [(nums, op[:])]
 		if diff == 0 and len(closelist) == 1:
-			print display(nums, op)
+			print(display(nums, op))
 	return (closest, closelist)
 
 if len(sys.argv) > 2:
@@ -88,14 +88,14 @@ if len(sys.argv) > 2:
 
 	unique = set(output)
 
-	print
-	print "Found: ", len(unique)
+	print()
+	print("Found: {}".format(len(unique)))
 	for seq in unique:
-		print seq
+		print(seq)
 
-	print
-	print "Found: ", len(unique)
-	print "Closest: ", closest
+	print()
+	print("Found: {}".format(len(unique)))
+	print("Closest: {}".format(closest))
 else:
-	print "Syntax: naive n1 n2 n3 n4 n5 n6 sun"
+	print("Syntax: naive n1 n2 n3 n4 n5 n6 sun")
 

@@ -210,11 +210,11 @@ def chooselayer(connections, built, start, height, numbers, find, closest):
 					distance = abs(calc - find)
 					if distance <= closest:
 						if (distance == 0) and (closest != 0):
-							print "#######################################"
+							print("#######################################")
 
 						string = formulatostring(formula[0], operators, perm) + " = " + str(calc)
 						closest = distance
-						print string
+						print(string)
 	return closest
 
 def shuntconnection(connections, height, maxnodes, nodes):
@@ -269,11 +269,11 @@ def connections(numbers, find):
 """
 if len(sys.argv) > 3:
 	find = int(sys.argv[-1])
-	nums = map(int, sys.argv[1:-1])
+	nums = list(map(int, sys.argv[1:-1]))
 
 	connections(nums, find)
 else:
-	print "Syntax: countdown n_1 n_2 ... n_m sum"
+	print("Syntax: countdown n_1 n_2 ... n_m sum")
 
 
 
