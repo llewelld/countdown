@@ -215,6 +215,7 @@ def chooselayer(connections, built, start, height, numbers, find, closest):
 						string = formulatostring(formula[0], operators, perm) + " = " + str(calc)
 						closest = distance
 						print(string)
+						exit()
 	return closest
 
 def shuntconnection(connections, height, maxnodes, nodes):
